@@ -43,6 +43,7 @@ namespace colorsql
             services.AddScoped<ColorQuery>();
             services.AddTransient<ColorType>();
             services.AddTransient<TranslationType>();
+            services.AddTransient<ColorsType>();
             services.AddScoped<ISchema, ColorSchema>();
 
             services.AddTransient<IColorRepository, ColorRepository>();
@@ -99,6 +100,11 @@ namespace colorsql
                                    translations=new List<Translation>() {
                                         new Translation { Language="catalan", Name="negre"},
                                         new Translation { Language="english", Name="black"}
+                                    }
+                },
+                new Color { Rgb="#0000FF",
+                                   translations=new List<Translation>() {
+                                        new Translation { Language="catalan", Name="blau"},
                                     }
                 }
             };

@@ -23,6 +23,10 @@ namespace colorsql.Models
                 ),
                 resolve: context => colorRepository.GetColorAsync(context.GetArgument<int>("id")).Result
             );
+            Field<ListGraphType<ColorType>>(
+                "colors",
+                resolve: context => colorRepository.ColorsAsync()
+            );
         }
     }
 }
