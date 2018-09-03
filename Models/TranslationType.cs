@@ -14,7 +14,7 @@ namespace colorsql.Models
 
             Field<ColorType>(
                 "color",
-                resolve: context => repo.GetColorAsync(context.Source.Color.Id).Result
+                resolve: context => repo.GetColorAsync(context.Source.ColorId).Result
             );
         }
     }
