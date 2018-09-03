@@ -15,3 +15,15 @@ I es poden llistar tots els colors de la base de dades amb l'arrel "colors":
 Evidentment es poden recuperar les dades que calguin de cada color només especificant-les en la petició:
 
 ![Llista](README/totscolors2.png)
+
+## Alies
+
+Es poden obtenir diversos elements del servei fent servir àlies (bàsicament per evitar que hi hagi repeticions en els camps)
+
+![àlies](README/alies.png)
+
+## Fragments
+
+També és pot obtenir el mateix evitant repetir les dades amb els fragments
+
+![fragments](README/fragments.png)
