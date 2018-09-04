@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using colorsql.Data;
 using colorsql.Models;
 using GraphQL;
+using GraphQL.Http;
 using GraphQL.Types;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -39,6 +40,7 @@ namespace colorsql
             services.AddScoped<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
 
             services.AddScoped<IDocumentExecuter, DocumentExecuter>();
+            services.AddSingleton<IDocumentWriter, DocumentWriter>();
 
             services.AddScoped<ColorQuery>();
             services.AddTransient<ColorType>();

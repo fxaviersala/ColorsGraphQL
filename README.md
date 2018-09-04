@@ -27,3 +27,11 @@ Es poden obtenir diversos elements del servei fent servir àlies (bàsicament pe
 També és pot obtenir el mateix evitant repetir les dades amb els fragments
 
 ![fragments](README/fragments.png)
+
+## Variables
+
+Es poden fer servir variables per reaprofitar les peticions que s'han fet i només especificar el que canvia
+
+![variables](README/variables.png)
+
+![variables2](README/variables2.png)
