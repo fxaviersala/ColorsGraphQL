@@ -14,6 +14,13 @@ namespace colorsql.Data
         {
             _context = context;
         }
+
+        public async Task Add(Color color)
+        {
+            _context.Colors.Add(color);
+            await _context.SaveChangesAsync();
+        }
+
         public Task<List<Color>> ColorsAsync()
         {
             return Task.FromResult(_context.Colors.ToList());

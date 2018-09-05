@@ -35,3 +35,9 @@ Es poden fer servir variables per reaprofitar les peticions que s'han fet i nom�
 ![variables](README/variables.png)
 
 ![variables2](README/variables2.png)
+
+## Directives
+
+En GraphQL hi ha una sèrie de directives per control·lar el funcionament. Per exemple `@include` permet definir si una part ha de sortir o no
+
+![Directives](README/directives.png)

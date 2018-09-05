@@ -43,6 +43,7 @@ namespace colorsql
             services.AddSingleton<IDocumentWriter, DocumentWriter>();
 
             services.AddScoped<ColorQuery>();
+            services.AddScoped<ColorMutation>();
             services.AddTransient<ColorType>();
             services.AddTransient<TranslationType>();
             services.AddTransient<ColorsType>();

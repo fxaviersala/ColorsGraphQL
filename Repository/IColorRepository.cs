@@ -9,5 +9,6 @@ namespace colorsql.Data
     {
         Task<List<Color>> ColorsAsync();
         Task<Color> GetColorAsync(int id);
+        Task Add(Color color);
     }
 }
